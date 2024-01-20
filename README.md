@@ -1,5 +1,5 @@
-# classic-wow-item-db
-A MySQL database of classic WoW items.
+# sod-item-db
+A MySQL database of classic WoW items for Season of Discovery.
 
 I couldn't find an easily usable database of items to put in my guild's website to help with loot management. So, I grabbed a database from the Light's Hope private server ([this](https://github.com/brotalnia/database/blob/master/world_full_05_october_2019.7z) file from [this](https://github.com/brotalnia/database) repo).
 
