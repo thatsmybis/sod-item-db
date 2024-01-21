@@ -100,3 +100,11 @@ You may want to add an index to the table to make the names more effeciently sea
 4. Run `insert_item_sources.sql` queries.
 5. Run `insert_item_item_sources.sql` queries.
 6. Run `updates.sql` from the root of this repo.
+
+## Adding new data to the database
+As phases are added, we get new items. To add them:
+1. For new items, create new `INSERT` statements in `thatsmybis\seasonal\season_of_discovery_item_inserts.sql`, insert them into your primary database.
+2. For new instances, add them to `insert_instances.sql` and insert them into your primary database.
+3. For new bosses, add them to `insert_item_sources.sql` and insert them into your primary database.
+4. For loot tied to those bosses, add them to `insert_item_item_sources.sql` and insert them into your primary database.
+5. If there are any tokens (tier tokens, item tokens, tokens such as Head of Onyxia), add them to `link_tokens.sql` and insert them into your primary database.
