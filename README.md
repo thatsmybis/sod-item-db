@@ -75,7 +75,7 @@ These are the general items I found for each value in this column:
 - 16 = cloak
 - 17 = 2h weapon
 - 18 = bag, quiver/ammo pouch
-- 19 = //// nothing (after my filters, I found nothing in here)
+- 19 = tabard
 - 20 = cloth chest
 - 21 = mainhand 1h weapons
 - 22 = offhand 1h weapon
@@ -94,12 +94,13 @@ This one _seems_ like it would be useful to identify class specific items, but t
 You may want to add an index to the table to make the names more effeciently searchable in MySQL: `CREATE FULLTEXT INDEX items_name_fulltext ON `items`(`name`)`
 
 # Adding SOD database to an existing `items.sql` database
-1. Run the `insert_items.sql` queries on the prod db. (for future expansions, change the expansion_id from 4 in these queries to whatever else [5, 6, 7, etc.])
-2. Run the `season_of_discovery_item_inserts.sql` queries on the prod db.
-3. Run `insert_instances.sql` queries.
-4. Run `insert_item_sources.sql` queries.
-5. Run `insert_item_item_sources.sql` queries.
-6. Run `updates.sql` from the root of this repo.
+1. Run the `instances` insert statement found in `season_of_discovery_item_inserts.sql`.
+2. Run the `insert_items.sql` queries on the prod db. (for future expansions, change the expansion_id from 4 in these queries to whatever else [5, 6, 7, etc.])
+3. EXCEPT for the `instances` insert which you already ran, DO run the `season_of_discovery_item_inserts.sql` queries on the prod db.
+4. Run `insert_instances.sql` queries.
+5. Run `insert_item_sources.sql` queries.
+6. Run `insert_item_item_sources.sql` queries.
+7. Run `updates.sql` from the root of this repo.
 
 ## Adding new data to the database
 As phases are added, we get new items. To add them:
