@@ -13,3 +13,16 @@ VALUES
     ("Lorgus Jett",   "lorgus-jett",   44, 207356, null, 5, "2024-01-19 00:00:00"),
     ("Lord Kelris",   "lord-kelris",   44, 209678, null, 7, "2024-01-19 00:00:00"),
     ("Aku'mai",       "aku-mai",       44, 213334, null, 8, "2024-01-19 00:00:00");
+
+INSERT INTO `item_sources` (`name`, `slug`, `instance_id`, `npc_id`, `object_id`, `order`, `created_at`)
+VALUES
+    ("Unknown", "unknown", 45, null, null, 1, "2024-01-19 00:00:00");
+UPDATE `item_sources` SET `name` = "Trash", `slug` = "trash" WHERE `id` = 326;
+INSERT INTO `item_sources` (`name`, `slug`, `instance_id`, `npc_id`, `object_id`, `order`, `created_at`)
+VALUES
+    ("Grubbis",               "Grubbis",               45, 217280, null, 2, "2024-02-17 00:00:00"),
+    ("Viscous Fallout",       "Viscous Fallout",       45, 220007, null, 3, "2024-02-17 00:00:00"),
+    ("Electrocutioner 6000",  "Electrocutioner 6000",  45, 220072, null, 4, "2024-02-17 00:00:00"),
+    ("Crowd Pummeler 9-60",   "Crowd Pummeler 9-60",   45, 215728, null, 5, "2024-02-17 00:00:00"),
+    ("Mechanical Menagerie",  "Mechanical Menagerie",  45, 218242, null, 6, "2024-02-17 00:00:00"),
+    ("Mekgineer Thermaplugg", "Mekgineer Thermaplugg", 45, 218537, null, 7, "2024-02-17 00:00:00");

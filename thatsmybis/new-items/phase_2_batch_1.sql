@@ -1,5 +1,6 @@
 -- For thatsmybis database
 -- Phase 2 lvl 40 prepatch
+-- All items in builds 53009, 53181
 INSERT INTO `items`
     (`item_id`, `parent_id`, `parent_item_id`, `expansion_id`, `faction`, `name`, `weight`, `quality`, `is_heroic`, `display_id`, `inventory_type`, `allowable_class`, `item_level`, `required_level`, `set_id`, `name_cn`, `name_de`, `name_es`, `name_fr`, `name_it`, `name_ko`, `name_pt`, `name_ru`, `created_at`)
 VALUES

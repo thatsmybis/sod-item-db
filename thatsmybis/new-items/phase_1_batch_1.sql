@@ -1,5 +1,6 @@
 -- For thatsmybis database
 -- Phase 1 lvl 25
+-- All items in builds up to 52610
 -- INSERT INTO `expansions` (`id`, `name`, `name_short`, `name_long`, `slug`, `is_enabled`, `created_at`, `updated_at`)
 -- VALUES (4, "Season of Discovery", "SoD", "Season of Discovery", "season-of-discovery", 1, "2023-12-17 00:00:00", null);
 INSERT INTO `items`

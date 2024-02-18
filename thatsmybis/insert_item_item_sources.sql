@@ -160,3 +160,232 @@ VALUES
     (325, 209691),
     (325, 209534),
     (325, 209562);
+
+-- Tie specific loot to specific bosses (sources)
+INSERT INTO `item_item_sources` (`item_source_id`,`item_id`)
+VALUES
+    --
+    -- Tie phase 2 datamined loot to Gnomeregan sources
+    --
+    -- 326 dungeon
+    (326, 215377), -- irradiated-robe
+    (326, 215379), -- irradiated-trousers
+    (326, 215378), -- irradiated-boots
+    (326, 213310), -- hyperconductive-shimmershirt
+    (326, 213328), -- hyperconductive-pantaloons
+    (326, 213337), -- hyperconductive-sandals
+    (326, 213311), -- hyperconductive-robe
+    (326, 213329), -- hyperconductive-skirt
+    (326, 213336), -- hyperconductive-walkers
+    (326, 213313), -- insulated-chestguard
+    (326, 213332), -- insulated-legguards
+    (326, 213341), -- insulated-workboots
+    (326, 213312), -- insulated-apron
+    (326, 213331), -- insulated-leggings
+    (326, 213342), -- insulated-galoshes
+    (326, 213314), -- electromantic-chainmail
+    (326, 213339), -- electromantic-grounding-sabatons
+    (326, 213333), -- electromantic-chausses
+    (326, 213315), -- electromantic-chainshirt
+    (326, 213334), -- electromantic-gambeson
+    (326, 213338), -- electromantic-grounding-boots
+    (326, 213316), -- h-a-z-a-r-d-breastplate
+    (326, 213330), -- h-a-z-a-r-d-legplates
+    (326, 213335), -- h-a-z-a-r-d-boots
+    (326, 213301), -- synthetic-mantle
+    (326, 213298), -- mechbuilders-overalls
+    (326, 216675), -- pristine-civinad-robes
+    (326, 213285), -- levs-oil-stained-bindings
+    (326, 213415), -- tinkers-wrist-wraps
+    (326, 213300), -- fighter-ace-gloves
+    (326, 216680), -- shilly-mittens
+    (326, 213321), -- volatile-concoction-belt
+    (326, 213414), -- mech-menders-sash
+    (326, 213290), -- acidic-waders
+    (326, 213302), -- mantle-of-the-cunning-negotiator
+    (326, 213413), -- generously-padded-shoulderpads
+    (326, 213318), -- ornate-dark-iron-bangles
+    (326, 213319), -- machinists-gloves
+    (326, 213322), -- skullduggery-waistband
+    (326, 213323), -- cord-of-deep-earth
+    (326, 213299), -- petrolspill-pants
+    (326, 216676), -- nimble-triprunner-dungarees
+    (326, 213340), -- gnomebot-operators-boots
+    (326, 213303), -- lightning-rod-spaulders
+    (326, 213304), -- troggslayer-pauldrons
+    (326, 213317), -- experimental-aim-stabilizers
+    (326, 213320), -- fingers-of-arcane-accuracy
+    (326, 215380), -- power-assisted-lifting-belt
+    (326, 213324), -- electromagnetic-waistcord
+    (326, 213325), -- darkvision-girdle
+    (326, 216678), -- triple-reinforced-leggings
+    (326, 213305), -- machined-alloy-shoulderplates
+    (326, 213418), -- welded-truesilver-ringlets
+    (326, 213288), -- grubbis-grubby-gauntlets
+    (326, 213326), -- girdle-of-reclamation
+    (326, 213327), -- belt-of-the-trogg-berserker
+    (326, 213294), -- caverndeep-sabatons
+    (326, 213343), -- justice-badge
+    (326, 213344), -- gnomeregan-peace-officers-torque
+    (326, 213345), -- piston-pendant
+    (326, 213346), -- pendant-of-homecoming
+    (326, 213306), -- ingenuitys-cover
+    (326, 213307), -- drape-of-dismantling
+    (326, 213308), -- prototype-parachute-cloak
+    (326, 213309), -- cloak-of-invention
+    (326, 215112), -- unused-cloak-of-arcane-insulation
+    (326, 217005), -- repairmans-cape
+    (326, 213282), -- hypercharged-gear-of-innovation
+    (326, 213283), -- hypercharged-gear-of-conflagration
+    (326, 213284), -- hypercharged-gear-of-devastation
+    (326, 213287), -- electrocutioner-hexnut
+    (326, 216673), -- talvashs-brilliant-gold-ring
+    (326, 216674), -- noggs-brilliant-gold-ring
+    (326, 213347), -- miniaturized-combustion-chamber
+    (326, 213348), -- gyromatic-experiment-420b
+    (326, 213349), -- gniodine-pill-bottle
+    (326, 213350), -- wirdals-hardened-core
+    (326, 215437), -- trogg-transfigurator-3000
+    (326, 215461), -- domesticated-attack-chicken
+    (326, 213416), -- thermapluggs-rocket-cleaver
+    (326, 213292), -- gizmotron-gigachopper
+    (326, 213353), -- defibrillating-staff
+    (326, 213289), -- hydrostaff
+    (326, 213354), -- staff-of-the-evil-genius
+    (326, 213408), -- gyromatic-macro-adjustor
+    (326, 210741), -- automatic-crowd-pummeler
+    (326, 213286), -- electrocutioners-needle
+    (326, 213409), -- mekkatorques-arcano-shredder
+    (326, 213410), -- glimmering-gizmoblade
+    (326, 213352), -- gear-menders-grace
+    (326, 213291), -- toxic-revenger-ii
+    (326, 213295), -- ultrasonic-vibroblade
+    (326, 213297), -- oscillating-blasthammer
+    (326, 213560), -- mechanostrider-muffler
+    (326, 213419), -- 9-60-repair-manual
+    (326, 213442), -- cogmasters-claw
+    (326, 213542), -- the-necro-gnomicon
+    (326, 216679), -- shonis-dismantling-tool
+    (326, 213356), -- thermapluggs-custom-blaster
+    (326, 213293), -- hi-tech-supergun-mk-vii
+    (326, 213355), -- falcos-sting
+    (326, 213411), -- izzleflicks-inextinguishable-igniter
+    (326, 213559); -- mechanostrider-gear-shifter
+
+DELETE FROM `item_item_sources` WHERE `item_source_id` = 326;
+
+-- Tie specific loot to specific bosses (sources)
+INSERT INTO `item_item_sources` (`item_source_id`,`item_id`)
+VALUES
+    --
+    -- Tie phase 2 datamined loot to Gnomeregan sources
+    --
+    -- 326 Trash
+        -- (nothing yet)
+    -- 327 Grubbis
+    (327, 215437),
+    (327, 213288),
+    (327, 213304),
+    (327, 213321),
+    (327, 213294),
+    (327, 216490),
+    (327, 213327),
+    (327, 213322),
+    (327, 213351),
+    (327, 213542),
+    (327, 213323),
+    (327, 215435),
+    (327, 213324),
+    (327, 213326),
+    (327, 215436),
+    -- 328 Viscous Fallout
+    (328, 213307),
+    (328, 213355),
+    (328, 213352),
+    (328, 213289),
+    (328, 213285),
+    (328, 213301),
+    (328, 213302),
+    (328, 213299),
+    (328, 213353),
+    (328, 213413),
+    (328, 213290),
+    (328, 213291),
+    -- 329 Electrocutioner 6000
+    (329, 217008),
+    (329, 217009),
+    (329, 217007),
+    (329, 213319),
+    (329, 213300),
+    (329, 213309),
+    (329, 213287),
+    (329, 213560),
+    (329, 213298),
+    (329, 213293),
+    (329, 215377),
+    (329, 213559),
+    (329, 216494),
+    (329, 213354),
+    (329, 213286),
+    (329, 213414),
+    (329, 215379),
+    (329, 215378),
+    (329, 213418),
+    (329, 213279),
+    -- 330 Crowd Pummeler 9-60
+    (330, 213295),
+    (330, 213419),
+    (330, 213408),
+    (330, 213278),
+    (330, 213442),
+    (330, 213317),
+    (330, 213292),
+    (330, 213340),
+    (330, 213415),
+    (330, 213305),
+    (330, 215449),
+    (330, 210741),
+    (330, 213412),
+    -- 331 Mechanical Menagerie
+    (331, 217008),
+    (331, 217007),
+    (331, 217009),
+    (331, 215380),
+    (331, 213296),
+    (331, 213297),
+    (331, 213306),
+    (331, 215378),
+    (331, 213410),
+    (331, 213325),
+    (331, 213411),
+    (331, 213280),
+    (331, 213318),
+    (331, 213320),
+    (331, 215379),
+    (331, 213308),
+    (331, 215377),
+    (331, 213417),
+    (331, 213303),
+    -- 332 Mekgineer Thermaplugg
+    (332, 217350),
+    (332, 217351),
+    (332, 217009),
+    (332, 217008),
+    (332, 217007),
+    (332, 213348),
+    (332, 213283),
+    (332, 213349),
+    (332, 213350),
+    (332, 213284),
+    (332, 213356),
+    (332, 213347),
+    (332, 213409),
+    (332, 213416),
+    (332, 215379),
+    (332, 213282),
+    (332, 213281),
+    (332, 215377),
+    (332, 215461),
+    (332, 215378),
+    (332, 216608),
+    (332, 13325);
