@@ -20,9 +20,20 @@ VALUES
 UPDATE `item_sources` SET `name` = "Trash", `slug` = "trash" WHERE `id` = 326;
 INSERT INTO `item_sources` (`name`, `slug`, `instance_id`, `npc_id`, `object_id`, `order`, `created_at`)
 VALUES
-    ("Grubbis",               "Grubbis",               45, 217280, null, 2, "2024-02-17 00:00:00"),
-    ("Viscous Fallout",       "Viscous Fallout",       45, 220007, null, 3, "2024-02-17 00:00:00"),
-    ("Electrocutioner 6000",  "Electrocutioner 6000",  45, 220072, null, 4, "2024-02-17 00:00:00"),
-    ("Crowd Pummeler 9-60",   "Crowd Pummeler 9-60",   45, 215728, null, 5, "2024-02-17 00:00:00"),
-    ("Mechanical Menagerie",  "Mechanical Menagerie",  45, 218242, null, 6, "2024-02-17 00:00:00"),
-    ("Mekgineer Thermaplugg", "Mekgineer Thermaplugg", 45, 218537, null, 7, "2024-02-17 00:00:00");
+    ("Grubbis",               "grubbis",               45, 217280, null, 2, "2024-02-17 00:00:00"),
+    ("Viscous Fallout",       "viscous Fallout",       45, 220007, null, 3, "2024-02-17 00:00:00"),
+    ("Electrocutioner 6000",  "electrocutioner 6000",  45, 220072, null, 4, "2024-02-17 00:00:00"),
+    ("Crowd Pummeler 9-60",   "crowd-pummeler-9-60",   45, 215728, null, 5, "2024-02-17 00:00:00"),
+    ("Mechanical Menagerie",  "mechanical-menagerie",  45, 218242, null, 6, "2024-02-17 00:00:00"),
+    ("Mekgineer Thermaplugg", "mekgineer-thermaplugg", 45, 218537, null, 7, "2024-02-17 00:00:00");
+INSERT INTO `item_sources` (`name`, `slug`, `instance_id`, `npc_id`, `object_id`, `order`, `created_at`)
+VALUES
+    ("Unknown", "unknown", 46, null,   null, 1, "2024-04-07 00:00:00"),
+    ("Atal'alarion", "atalalarion", 46, 218624, null, 2, "2024-04-07 00:00:00"),
+    ("Rot Slime", "rot-slime", 46, null, null, 3, "2024-04-07 00:00:00"),
+    ("Atal'ai Defenders", "atalai-defenders", 46, null, null, 4, "2024-04-07 00:00:00"),
+    ("Dreamscythe & Weaver", "dreamscythe-weaver", 46, null, null, 5, "2024-04-07 00:00:00"),
+    ("Avatar of Hakkar", "avatar-of-hakkar", 46, 221394, null, 6, "2024-04-07 00:00:00"),
+    ("Jammal'an & Ogom", "jammal-ogom", 46, 218721, null, 7, "2024-04-07 00:00:00"), -- also 218718 for Ogom
+    ("Morphaz & Hazzas", "morphaz-hazzas", 46, 221942, null, 7, "2024-04-07 00:00:00"), -- also 221943 for Hazzas
+    ("Shade of Eranikus", "shade-of-eranikus", 46, 218571, null, 7, "2024-04-07 00:00:00");

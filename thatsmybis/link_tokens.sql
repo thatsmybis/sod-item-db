@@ -28,6 +28,9 @@ UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE 
 -- 213345 piston-pendant
 -- 213346 pendant-of-homecoming
 UPDATE `character_items` SET `item_id` = 217351 WHERE `item_id` = 217350;
+UPDATE `guild_items` SET `item_id` = 217351 WHERE `item_id` = 217350;
+UPDATE `audit_logs` SET `item_id` = 217351 WHERE `item_id` = 217350;
+DELETE FROM `items` WHERE `item_id` = 217350;
 UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE `item_id` = 217351 AND `expansion_id` = 4 LIMIT 1) AS thisisahack), `parent_item_id` = 217351 WHERE `item_id` IN (213343, 213344, 213345, 213346) AND `expansion_id` = 4;
 
 
