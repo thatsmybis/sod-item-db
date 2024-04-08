@@ -31,6 +31,26 @@ UPDATE `character_items` SET `item_id` = 217351 WHERE `item_id` = 217350;
 UPDATE `guild_items` SET `item_id` = 217351 WHERE `item_id` = 217350;
 UPDATE `audit_logs` SET `item_id` = 217351 WHERE `item_id` = 217350;
 DELETE FROM `items` WHERE `item_id` = 217350;
+-- Thermaplugg's Engineering Notes
 UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE `item_id` = 217351 AND `expansion_id` = 4 LIMIT 1) AS thisisahack), `parent_item_id` = 217351 WHERE `item_id` IN (213343, 213344, 213345, 213346) AND `expansion_id` = 4;
 
+-- HORDE Scapula of the Fallen Avatar
+UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE `item_id` = 221363 AND `expansion_id` = 4 LIMIT 1) AS thisisahack), `parent_item_id` = 221363 WHERE `item_id` IN (220628, 220629, 220626, 220630, 220627) AND `expansion_id` = 4;
+-- ALLIANCE Scapula of the Fallen Avatar
+-- UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE `item_id` = 221346 AND `expansion_id` = 4 LIMIT 1) AS thisisahack), `parent_item_id` = 221346 WHERE `item_id` IN (220628, 220629, 220626, 220630, 220627) AND `expansion_id` = 4;
+-- Swap anyone who chose the alliance version over to the horde version.
+UPDATE `character_items` SET `item_id` = 221363 WHERE `item_id` = 221346;
+UPDATE `guild_items` SET `item_id` = 221363 WHERE `item_id` = 221346;
+UPDATE `audit_logs` SET `item_id` = 221363 WHERE `item_id` = 221346;
+DELETE FROM `items` WHERE `item_id` = 221346;
 
+-- 220636 Atal'ai Blood Icon
+UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE `item_id` = 220636 AND `expansion_id` = 4 LIMIT 1) AS thisisahack), `parent_item_id` = 220636 WHERE `expansion_id` = 4 AND `item_id` IN
+(220665, 220661, 220666, 220642, 220662, 220667, 220643, 220676, 220668, 220648, 220677, 220650, 220678, 220651, 220657, 220652, 220658, 220653, 220659, 220654, 220663, 220656, 220664, 220660);
+
+-- 220637 Atal'ai Ritual Token
+UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE `item_id` = 220637 AND `expansion_id` = 4 LIMIT 1) AS thisisahack), `parent_item_id` = 220637 WHERE `expansion_id` = 4 AND `item_id` IN
+(220673, 220679, 220675, 220680, 220778, 220681, 220779, 220781, 220780, 220783, 220784, 220669, 220670, 220671, 220672);
+-- not listed in wowhead, but I can guess it's for this set
+UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE `item_id` = 220637 AND `expansion_id` = 4 LIMIT 1) AS thisisahack), `parent_item_id` = 220637 WHERE `expansion_id` = 4 AND `item_id` IN
+(220683, 220684, 220685);
