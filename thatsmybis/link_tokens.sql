@@ -54,3 +54,14 @@ UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE 
 -- not listed in wowhead, but I can guess it's for this set
 UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE `item_id` = 220637 AND `expansion_id` = 4 LIMIT 1) AS thisisahack), `parent_item_id` = 220637 WHERE `expansion_id` = 4 AND `item_id` IN
 (220683, 220684, 220685);
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-- SoD Head of Onyxia ---------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-- 228688 -- head of onyxia (Alliance)
+-- 228689 -- head of onyxia (Horde) (we use this one)
+UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE `item_id` = 228689 AND `expansion_id` = 4 LIMIT 1) AS thisisahack), `parent_item_id` = 228689 WHERE `item_id` = 228687 AND `expansion_id` = 4; -- dragonslayers-signet
+UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE `item_id` = 228689 AND `expansion_id` = 4 LIMIT 1) AS thisisahack), `parent_item_id` = 228689 WHERE `item_id` = 228686 AND `expansion_id` = 4; -- onyxia-blood-talisman
+UPDATE `items` SET `parent_id` = (SELECT * FROM (SELECT `id` FROM `items` WHERE `item_id` = 228689 AND `expansion_id` = 4 LIMIT 1) AS thisisahack), `parent_item_id` = 228689 WHERE `item_id` = 228685 AND `expansion_id` = 4; -- onyxia-tooth-pendant

@@ -922,7 +922,7 @@ VALUES
 (219996, null, null, 4, null, "Deputization Authorization: Duskwood Mission XVI",      0, 1, 0, 0, 0,  -1, 0, 0,  0, "", "", "", "", "", "", "", "", "2024-04-07 00:00:00"),
 (220090, null, null, 4, null, "Deputization Authorization: Feralas Mission II",        0, 1, 0, 0, 0,  -1, 0, 0,  0, "", "", "", "", "", "", "", "", "2024-04-07 00:00:00"),
 (220664, null, null, 4, null, "Corrupted Spiritweaver's Sabatons",                     0, 1, 0, 0, 8,  -1, 0, 50, 0, "", "", "", "", "", "", "", "", "2024-04-07 00:00:00"),
-(221785, null, null, 4, null, "Cenarion Tunic",                                        0, 1, 0, 0, 5,  -1, 0, 60, 0, "", "", "", "", "", "", "", "", "2024-04-07 00:00:00"),
+(221785, null, null, 4, null, "Cenarion Vestments",                                    0, 1, 0, 0, 5,  -1, 0, 60, 0, "", "", "", "", "", "", "", "", "2024-04-07 00:00:00"),
 (220170, null, null, 4, null, "Note from Gregory",                                     0, 1, 0, 0, 0,  -1, 0, 1,  0, "", "", "", "", "", "", "", "", "2024-04-07 00:00:00"),
 (221191, null, null, 4, null, "Dreamstone",                                            0, 1, 0, 0, 0,  -1, 0, 0,  0, "", "", "", "", "", "", "", "", "2024-04-07 00:00:00"),
 (221331, null, null, 4, null, "Schematic: Gnomish Rocket Boots",                       0, 1, 0, 0, 0,  -1, 0, 0,  0, "", "", "", "", "", "", "", "", "2024-04-07 00:00:00"),

@@ -531,3 +531,257 @@ VALUES
 (338, 220557, "2024-04-09 00:00:00"),
 (338, 220686, "2024-04-09 00:00:00"),
 (338, 220562, "2024-04-09 00:00:00");
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-- Phase 4 --------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+INSERT INTO `item_item_sources` (`item_source_id`, `item_id`)
+VALUES
+    -- Tie World Boss loot to World Bosses
+    -- Azuregos 77
+    (419, 228381), -- cold-snap
+    (419, 228385), -- crystal-adorned-crown
+    (419, 228389), -- drape-of-benediction
+    (419, 228349), -- eskhandars-left-claw
+    (419, 228382), -- fang-of-the-mystics
+    (419, 228345), -- leggings-of-arcane-supremacy
+    (419, 18704), -- mature-blue-dragon-sinew
+    (419, 228383), -- puissant-cape
+    (419, 228384), -- snowblind-shoes
+    (419, 228347), -- typhoon
+    (419, 228340), -- unmelting-ice-girdle
+
+    -- Lord Kazzak 78
+    (420, 228356), -- amberseal-keeper
+    (420, 228357), -- blacklight-bracer
+    (420, 228354), -- blazefury-medallion
+    (420, 228351), -- doomhide-gauntlets
+    (420, 228397), -- empyrean-demolisher
+    (420, 228360), -- eskhandars-pelt
+    (420, 228352), -- fel-infused-leggings
+    (420, 228355), -- flayed-doomguard-belt
+    (420, 228353), -- infernal-headcage
+    (420, 228359), -- ring-of-entropy
+    (420, 18665); -- the-eye-of-shadow
+
+INSERT INTO `item_item_sources` (`item_source_id`, `item_id`)
+VALUES
+    -- Tie Onyxia loot to Onyxia
+    (421, 228955), -- ancient-cornerstone-grimoire
+    (421, 16908), -- bloodfang-hood
+    (421, 17068), -- deathbringer
+    (421, 16939), -- dragonstalkers-helm
+    (421, 18205), -- eskhandars-collar
+    (421, 16921), -- halo-of-transcendence
+    (421, 228689), -- head-of-onyxia-horde
+    -- (421, 18423), -- head-of-onyxia-alliance
+    (421, 16963), -- helm-of-wrath
+    (421, 16947), -- helmet-of-ten-storms
+    (421, 16955), -- judgement-crown
+    (421, 18705), -- mature-black-dragon-sinew
+    (421, 16929), -- nemesis-skullcap
+    (421, 16914), -- netherwind-crown
+    (421, 228992), -- onyxia-hide-backpack
+    (421, 18813), -- ring-of-binding
+    (421, 17078), -- sapphiron-drape
+    (421, 228298), -- shard-of-the-scale
+    (421, 16900), -- stormrage-cover
+    (421, 17075); -- viskag-the-bloodletter
+
+INSERT INTO `item_item_sources` (`item_source_id`, `item_id`)
+VALUES
+    -- Tie MC loot to MC bosses
+    -- 422 Recipes
+    (422, 18260), -- formula-enchant-weapon-healing-power
+    (422, 18259), -- formula-enchant-weapon-spell-power
+    (422, 18252), -- pattern-core-armor-kit
+    (422, 21371), -- pattern-core-felcloth-bag
+    (422, 18265), -- pattern-flarecore-wraps
+    (422, 18264), -- plans-elemental-sharpening-stone
+    (422, 18257), -- recipe-major-rejuvenation-potion
+    (422, 18290), -- schematic-biznicks-247x128-accurascope
+    (422, 18292), -- schematic-core-marksman-rifle
+    (422, 18291), -- schematic-force-reactive-disk
+
+    -- 423 Trash
+    (423, 226555), -- arcanist-belt
+    (423, 226558), -- arcanist-bindings
+    (423, 226485), -- belt-of-might
+    (423, 226484), -- bracers-of-might
+    (423, 226650), -- cenarion-belt
+    (423, 226649), -- cenarion-bracers
+    (423, 226616), -- earthfury-belt
+    (423, 226618), -- earthfury-bracers
+    (423, 226551), -- felheart-belt
+    (423, 226553), -- felheart-bracers
+    (423, 226529), -- giantstalkers-belt
+    (423, 226530), -- giantstalkers-bracers
+    (423, 226577), -- girdle-of-prophecy
+    (423, 226592), -- lawbringer-belt
+    (423, 226589), -- lawbringer-bracers
+    (423, 226440), -- nightslayer-belt
+    (423, 226442), -- nightslayer-bracelets
+    (423, 226578), -- vambraces-of-prophecy
+
+    -- 424 Shared
+    (424, 228257), -- aged-core-leather-gloves
+    (424, 228262), -- crimson-shocker
+    (424, 228258), -- deep-earth-spaulders
+    (424, 228259), -- fire-runed-grimoire
+    (424, 228260), -- flameguard-gauntlets
+    (424, 228240), -- flamewaker-legplates
+    (424, 228242), -- heavy-dark-iron-ring
+    (424, 228254), -- magma-tempered-boots
+    (424, 228256), -- mana-igniting-cord
+    (424, 228244), -- manastorm-leggings
+    (424, 228459), -- obsidian-edged-blade
+    (424, 228229), -- obsidian-edged-blade MOLTEN
+    (424, 228261), -- quick-strike-ring
+    (424, 228243), -- ring-of-spell-power
+    (424, 228239), -- robe-of-volatile-power
+    (424, 228253), -- sabatons-of-the-flamewalker
+    (424, 228245), -- salamander-scale-pants
+    (424, 228263), -- sorcerous-dagger
+    (424, 228255), -- talisman-of-ephemeral-power
+    (424, 228246), -- wristguards-of-stability
+
+    -- 425 Lucifron
+    (425, 226557), -- arcanist-boots
+    (425, 226645), -- cenarion-boots
+    (425, 228247), -- choker-of-enlightenment
+    (425, 226613), -- earthfury-boots
+    (425, 226552), -- felheart-gloves
+    (425, 226486), -- gauntlets-of-might
+    (425, 226593), -- lawbringer-boots
+    (425, 16665), -- tome-of-tranquilizing-shot
+
+    -- 426 Magmadar
+    (426, 226561), -- arcanist-leggings
+    (426, 226646), -- cenarion-leggings
+    (426, 226614), -- earthfury-legguards
+    (426, 228248), -- earthshaker
+    (426, 228463), -- earthshaker MOLTEN
+    (426, 228350), -- eskhandars-right-claw
+    (426, 226547), -- felheart-pants
+    (426, 226532), -- giantstalkers-leggings
+    (426, 226594), -- lawbringer-legplates
+    (426, 226490), -- legplates-of-might
+    (426, 228249), -- medallion-of-steadfast-might
+    (426, 226445), -- nightslayer-pants
+    (426, 226574), -- pants-of-prophecy
+    (426, 228252), -- strikers-mark
+    (426, 228519), -- strikers-mark MOLTEN
+
+    -- 427 Gehennas
+    (427, 226615), -- earthfury-gauntlets
+    (427, 226531), -- giantstalkers-boots
+    (427, 226572), -- gloves-of-prophecy
+    (427, 226591), -- lawbringer-gauntlets
+    (427, 226441), -- nightslayer-gloves
+    (427, 226487), -- sabatons-of-might
+
+    -- 428 Garr
+    (428, 226562), -- arcanist-crown
+    (428, 228264), -- aurastone-hammer
+    (428, 228462), -- aurastone-hammer MOLTEN
+    (428, 18564), -- bindings-of-the-windseeker
+    (428, 228265), -- brutality-blade
+    (428, 228506), -- brutality-blade MOLTEN
+    (428, 226647), -- cenarion-helm
+    (428, 226573), -- circlet-of-prophecy
+    (428, 228266), -- drillborer-disk
+    (428, 228702), -- drillborer-disk MOLTEN
+    (428, 226612), -- earthfury-helmet
+    (428, 226549), -- felheart-horns
+    (428, 226533), -- giantstalkers-helmet
+    (428, 228267), -- gutgore-ripper
+    (428, 226488), -- helm-of-might
+    (428, 226590), -- lawbringer-helm
+    (428, 226446), -- nightslayer-cover
+
+    -- 429 Shazzrah
+    (429, 226556), -- arcanist-gloves
+    (429, 226571), -- boots-of-prophecy
+    (429, 226648), -- cenarion-gloves
+    (429, 226554), -- felheart-slippers
+    (429, 226528), -- giantstalkers-gloves
+    (429, 226443), -- nightslayer-boots
+
+    -- 430 Baron Geddon
+    (430, 226560), -- arcanist-mantle
+    (430, 18563), -- bindings-of-the-windseeker
+    (430, 226644), -- cenarion-spaulders
+    (430, 226611), -- earthfury-epaulets
+    (430, 226550), -- felheart-shoulder-pads
+    (430, 226588), -- lawbringer-spaulders
+    (430, 228268), -- seal-of-the-archmagus
+    (430, 17782), -- talisman-of-binding-shard
+
+    -- 431 Golemagg the Incinerator
+    (431, 226559), -- arcanist-robes
+    (431, 228269), -- azuresong-mageblade
+    (431, 228517), -- azuresong-mageblade MOLTEN
+    (431, 228270), -- blastershot-launcher
+    (431, 226489), -- breastplate-of-might
+    (431, 221785), -- cenarion-vestments
+    (431, 226617), -- earthfury-vestments
+    (431, 226548), -- felheart-robes
+    (431, 226534), -- giantstalkers-breastplate
+    (431, 226595), -- lawbringer-chestguard
+    (431, 226447), -- nightslayer-chestpiece
+    (431, 226575), -- robes-of-prophecy
+    (431, 228271), -- staff-of-dominance
+    (431, 228922), -- staff-of-dominance MOLTEN
+
+    -- 432 Sulfuron Harbinger
+    (432, 226527), -- giantstalkers-epaulets
+    (432, 226576), -- mantle-of-prophecy
+    (432, 226444), -- nightslayer-shoulder-pads
+    (432, 226492), -- pauldrons-of-might
+    (432, 228272), -- shadowstrike
+
+    -- 433 Majordomo Executus
+    (433, 18703), -- ancient-petrified-leaf
+    (433, 228274), -- cauterizing-band
+    (433, 228275), -- core-forged-greaves
+    (433, 228277), -- core-hound-tooth
+    (433, 228701), -- core-hound-tooth MOLTEN
+    (433, 18803), -- finkles-lava-dredger
+    (433, 228279), -- fireguard-shoulders
+    (433, 228280), -- fireproof-cloak
+    (433, 228281), -- gloves-of-the-hypnotic-flame
+    (433, 228282), -- sash-of-whispered-secrets
+    (433, 18646), -- the-eye-of-divinity
+    (433, 228283), -- wild-growth-spaulders
+    (433, 228284), -- wristguards-of-true-flight
+
+    -- 434 Ragnaros
+    (434, 228286), -- band-of-accuria
+    (434, 228287), -- band-of-sulfuras
+    (434, 16909), -- bloodfang-pants
+    (434, 228288), -- bonereavers-edge
+    (434, 228461), -- bonereavers-edge MOLTEN
+    (434, 228289), -- choker-of-the-fire-lord
+    (434, 228290), -- cloak-of-the-shrouded-mists
+    (434, 228291), -- crown-of-destruction
+    (434, 228292), -- dragons-blood-cape
+    (434, 16938), -- dragonstalkers-legguards
+    (434, 228293), -- essence-of-the-pure-flame
+    (434, 227728), -- eye-of-sulfuras
+    (434, 16954), -- judgement-legplates
+    (434, 16922), -- leggings-of-transcendence
+    (434, 16946), -- legplates-of-ten-storms
+    (434, 16962), -- legplates-of-wrath
+    (434, 228294), -- malistars-defender
+    (434, 16930), -- nemesis-leggings
+    (434, 16915), -- netherwind-pants
+    (434, 228295), -- onslaught-girdle
+    (434, 228296), -- perditions-blade
+    (434, 228511), -- perditions-blade MOLTEN
+    (434, 228297), -- shard-of-the-flame
+    (434, 228299), -- spinal-reaper
+    (434, 228460), -- spinal-reaper MOLTEN
+    (434, 16901); -- stormrage-legguards
